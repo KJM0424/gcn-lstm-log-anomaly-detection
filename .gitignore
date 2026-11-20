@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 데이터셋 (Loghub HDFS_v1 — 용량 문제로 미포함, README 참고)
+data/
+HDFS_v1/
+*.csv
+
+# 로그·환경
+*.log
+.env
+.DS_Store
+
+# 개인 기록
+CHANGELOG.md

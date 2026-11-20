@@ -1,0 +1,91 @@
+{
+  "protocol": "random",
+  "seed": 0,
+  "epochs": 10,
+  "max_steps": 0,
+  "data": {
+    "blocks": 575061,
+    "units": 18383,
+    "unique_sequences": 18373,
+    "anomaly_blocks": 16838,
+    "test_blocks": 115013,
+    "test_anomaly_blocks": 3404,
+    "test_units": 6876,
+    "test_blocks_whose_sequence_is_in_train": 0.9794
+  },
+  "models": {
+    "조회표": {
+      "block": {
+        "precision": 0.9993,
+        "recall": 0.8041,
+        "f1": 0.8911,
+        "tp": 2737,
+        "fp": 2,
+        "fn": 667
+      },
+      "unit": {
+        "precision": 0.9961,
+        "recall": 0.4426,
+        "f1": 0.6129,
+        "tp": 517,
+        "fp": 2,
+        "fn": 651
+      }
+    },
+    "횟수 로지스틱 회귀": {
+      "block": {
+        "precision": 0.9778,
+        "recall": 0.995,
+        "f1": 0.9863,
+        "tp": 3387,
+        "fp": 77,
+        "fn": 17
+      },
+      "unit": {
+        "precision": 0.9411,
+        "recall": 0.9854,
+        "f1": 0.9628,
+        "tp": 1151,
+        "fp": 72,
+        "fn": 17
+      }
+    },
+    "GCN 단독": {
+      "block": {
+        "precision": 0.9889,
+        "recall": 0.4062,
+        "f1": 0.5759,
+        "tp": 1332,
+        "fp": 15,
+        "fn": 1947
+      },
+      "unit": {
+        "precision": 0.8889,
+        "recall": 0.1078,
+        "f1": 0.1923,
+        "tp": 120,
+        "fp": 15,
+        "fn": 993
+      }
+    },
+    "GCN-LSTM (원본 방식)": {
+      "block": {
+        "precision": 0.9627,
+        "recall": 0.9486,
+        "f1": 0.9556,
+        "tp": 3229,
+        "fp": 125,
+        "fn": 175
+      },
+      "unit": {
+        "precision": 0.9076,
+        "recall": 0.8913,
+        "f1": 0.8994,
+        "tp": 1041,
+        "fp": 106,
+        "fn": 127
+      }
+    }
+  },
+  "seconds": 3007
+}

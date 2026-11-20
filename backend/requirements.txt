@@ -1,0 +1,12 @@
+flask
+flask_socketio
+flask_cors
+torch
+torch_geometric
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+networkx
+shap
